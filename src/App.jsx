@@ -1,7 +1,7 @@
 import React from "react";
 import "./app.scss";
-import Navbar from "./components/Navbar/Navbar";
 import Test from "./Test";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (

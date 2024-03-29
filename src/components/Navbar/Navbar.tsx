@@ -2,10 +2,12 @@ import React from "react";
 import "./navbar.scss";
 import { facebook, linkedin } from "../../assets";
 import { motion } from "framer-motion";
+import Sidebar from "../sidebar/Sidebar";
 function Navbar() {
   return (
     <div className="navbar">
       {/*sidebar */}
+      <Sidebar />
 
       <div className="wrapper">
         <motion.span
