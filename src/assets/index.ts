@@ -29,8 +29,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import facebook from "./facebook.png";
+import linkedin from "./linkedin.png";
 
 export {
+  facebook,
+  linkedin,
   logo,
   backend,
   creator,
