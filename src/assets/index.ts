@@ -31,9 +31,15 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import facebook from "./facebook.png";
 import linkedin from "./linkedin.png";
+import computer from "./computer.png";
+import hero from "./hero.png";
+import scroll from "./scroll.png";
 
 export {
+  scroll,
+  hero,
   facebook,
+  computer,
   linkedin,
   logo,
   backend,
