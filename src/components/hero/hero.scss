@@ -2,7 +2,6 @@
   height: calc(100vh - 100px);
   background: linear-gradient(180deg, #0c0c1d, #111132);
   overflow: hidden;
-  position: relative;
   .wrapper {
     // max-width: 1366px;
     height: 100%;
@@ -49,6 +48,8 @@
     right: 0px;
 
     img {
+      z-index: 0;
+
       max-width: 800px;
     }
   }
