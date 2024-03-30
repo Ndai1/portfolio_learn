@@ -1,6 +1,6 @@
 import React from "react";
 const Links = () => {
-  const items = ["Homepage", "Portfolio", "Contact", "About"];
+  const items = ["Homepage", "Portfolio", "Project", "Contact"];
   return (
     <>
       <div className="links">
