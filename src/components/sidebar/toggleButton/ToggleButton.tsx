@@ -1,40 +1,39 @@
 import { motion } from "framer-motion";
 import React from "react";
 
+const Path = (props) => (
+  <motion.path
+    fill="transparent"
+    strokeWidth="3"
+    stroke="black"
+    strokeLinecap="round"
+    {...props}
+  />
+);
+
 function ToggleButton({ setOpen }) {
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
-      <svg
-        height="23"
-        width="23"
-        viewBox="0 0 23 23"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <motion.path
+      <svg height="23" width="23" viewBox="0 0 23 23">
+        <Path
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" },
             open: { d: "M 2 16.5 L 17 2.5" },
           }}
-          strokeWidth="3"
-          stroke="black"
-          strokeLinecap="round"
         />
 
-        <motion.path
+        <Path
+          d="M 2 9.423 L 20 9.423"
+          opacity="1"
+          transition={{ duration: 0.1 }}
           variants={{
             closed: { opacity: 1 },
             open: { opacity: 0 },
           }}
-          strokeWidth="3"
-          stroke="black"
-          d="M 2 9.423 L 20 9.423"
-          strokeLinecap="round"
         />
 
-        <motion.path
-          strokeWidth="3"
-          stroke="black"
-          strokeLinecap="round"
+        <Path
+          d="M 2 16.346 L 20 16.346"
           variants={{
             closed: { d: "M 2 16.346 L 20 16.346" },
             open: { d: "M 3 2.5 L 17 16.346" },
