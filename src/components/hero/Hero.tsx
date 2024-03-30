@@ -4,7 +4,7 @@ import { hero, scroll } from "../../assets";
 import { motion } from "framer-motion";
 
 const textVariants = {
-  inintial: {
+  initial: {
     x: -500,
     opacity: 0,
   },
@@ -12,8 +12,16 @@ const textVariants = {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 5,
-      staggerChildren: 0.1,
+      duration: 1,
+      staggerChildren: 0.2,
+    },
+  },
+  scrollButton: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
     },
   },
 };
@@ -37,7 +45,11 @@ const Hero = () => {
             </motion.button>
             <motion.button variants={textVariants}>Contact me</motion.button>
           </motion.div>
-          <motion.img variants={textVariants} src={scroll} />
+          <motion.img
+            animate="scrollButton"
+            variants={textVariants}
+            src={scroll}
+          />
         </motion.div>
       </div>
 
