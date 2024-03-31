@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 import About from "./components/about/About";
+import Tech from "./components/tech/Tech";
 
 function App() {
   return (
@@ -15,14 +16,12 @@ function App() {
 
       <section id="About">
         <About />
-      </section>
-      <section id="Projects">
-        <Parallax type="projects" />
+
       </section>
 
-      <section id="Portfolio">
-        <Parallax type="portfolio" />
-      </section>
+
+      <section id="Projects"></section>
+      <section id="Portfolio"></section>
       <section id="Contact"></section>
     </div>
   );
