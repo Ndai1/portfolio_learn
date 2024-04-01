@@ -30,7 +30,7 @@ section {
   height: 60%;
 }
 
-justify-center {
+.justify-center {
   justify-content: center;
 }
 .items-center {
@@ -56,4 +56,10 @@ justify-center {
 }
 .mt-20 {
   margin-top: 5rem;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 20rem;
+  display: flex;
 }

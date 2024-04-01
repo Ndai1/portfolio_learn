@@ -65,9 +65,6 @@ const About = () => {
             ))}
           </div>
 
-          <div className="technologies">
-            <Tech />
-          </div>
         </motion.div>
       </div>
     </>

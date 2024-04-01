@@ -6,6 +6,8 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import Tech from "../tech/Tech";
+import { motion } from "framer-motion";
 
 const ExperienceCard = (experience) => {
   return (
@@ -53,7 +55,12 @@ const ExperienceCard = (experience) => {
 
 const Experience = () => {
   return (
-    <div className="experinece">
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="experinece"
+    >
       <div className="wrapper">
         <p>WHAT I HAVE DONE SO FAR</p>
 
@@ -66,8 +73,12 @@ const Experience = () => {
             ))}
           </VerticalTimeline>
         </div>
+
+        <div className="technologies">
+          <Tech />
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
