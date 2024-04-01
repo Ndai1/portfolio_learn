@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.scss";
-import { creator, web, backend, reactjs, linkedin } from "../../assets";
+import { creator, web, backend, reactjs } from "../../assets";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../../utils/motion";
 import Tech from "../tech/Tech";

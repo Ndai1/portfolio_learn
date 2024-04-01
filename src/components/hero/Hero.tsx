@@ -36,7 +36,7 @@ const Hero = () => {
           animate="animate"
           variants={textVariants}
         >
-          <motion.h2 variants={textVariants}>NGUYEN HO PHI LONG</motion.h2>
+          {/* <motion.h2 variants={textVariants}>NGUYEN HO PHI LONG</motion.h2> */}
           <motion.h1 variants={textVariants}>Fullstack Developer </motion.h1>
 
           <motion.div variants={textVariants} className="buttons">

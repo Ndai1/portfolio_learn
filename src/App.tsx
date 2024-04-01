@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import Parallax from "./components/parallax/Parallax";
 import About from "./components/about/About";
 import Tech from "./components/tech/Tech";
+import Experience from "./components/experience/Experience";
 
 function App() {
   return (
@@ -16,12 +17,12 @@ function App() {
 
       <section id="About">
         <About />
-
       </section>
 
-
+      <section id="Portfolio">
+        <Experience></Experience>
+      </section>
       <section id="Projects"></section>
-      <section id="Portfolio"></section>
       <section id="Contact"></section>
     </div>
   );
