@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -11,55 +15,29 @@ body {
   color: lightgray;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-section {
-  height: section;
-}
+// a {
+//   text-decoration: none;
+//   color: inherit;
+// }
+// section {
+//   height: section;
+// }
+// .wrapper {
+//   max-width: 80%;
+//   margin: 0 20rem;
+//   display: flex;
+// }
 
-.object-contain {
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-.w-\[60\%\] {
-  width: 60%;
-}
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.justify-center {
-  justify-content: center;
-}
-.items-center {
-  align-items: center;
-}
-.w-full {
-  width: 100%;
-}
-.h-full {
-  height: 100%;
-}
-.flex {
-  display: flex;
-}
-.justify-center {
-  justify-content: center;
-}
-.flex-col {
-  flex-direction: column;
-}
-.flex {
-  display: flex;
-}
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.wrapper {
-  max-width: 80%;
-  margin: 0 20rem;
-  display: flex;
+.black-gradient {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

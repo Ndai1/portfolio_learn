@@ -9,21 +9,23 @@ import Experience from "./components/experience/Experience";
 
 function App() {
   return (
-    <div>
+    <div className="bg-primary relative z-0">
       <section id="Homepage">
         <Navbar></Navbar>
-        <Hero></Hero>
+        {/* <Hero></Hero> */}
       </section>
-
-      <section id="About">
+      {/* 
+      <section id="about">
         <About />
       </section>
 
-      <section id="Portfolio">
+      <section id="work">
         <Experience></Experience>
       </section>
-      <section id="Projects"></section>
-      <section id="Contact"></section>
+      <section id="Projects">My Projects</section>
+      <section id="contact">
+        <Experience></Experience>
+      </section> */}
     </div>
   );
 }

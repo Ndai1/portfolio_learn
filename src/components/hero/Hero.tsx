@@ -28,8 +28,8 @@ const textVariants = {
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="wrapper">
+    <div className=" relative mx-auto h-screen w-full">
+      <div className="wrapper mx-auto flex w-full max-w-7xl items-center justify-between">
         <motion.div
           className="textContainer"
           initial="initial"

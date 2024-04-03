@@ -38,7 +38,12 @@ const About = () => {
           className="wrapper"
         >
           <motion.div variants={textVariant()}>
-            <motion.p variants={fadeIn("", "", 0.1, 1)}>INTRODUCTION</motion.p>
+            <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className="text-secondary mt-4 max-w-3xl text-[17px] leading-[30px]"
+            >
+              INTRODUCTION
+            </motion.p>
             <motion.h1 variants={fadeIn("", "", 0.5, 1)}>Overview.</motion.h1>
             <motion.h4 variants={fadeIn("", "", 1, 1)}>
               I'm a skilled software developer with experience in .NET backend
@@ -64,7 +69,6 @@ const About = () => {
               </motion.div>
             ))}
           </div>
-
         </motion.div>
       </div>
     </>
