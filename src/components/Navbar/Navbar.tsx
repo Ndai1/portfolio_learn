@@ -24,13 +24,17 @@ const item = {
 function Navbar() {
   const [active, setActive] = useState<string | null>();
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
 
       if (scrollTop <= 100) {
+        setScrolled(false);
         setActive("");
+      } else {
+        setScrolled(true);
       }
     };
 
@@ -60,9 +64,11 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="sm:px-16 px-6 fixed top-0 z-20 flex w-full items-center py-5">
-      {/* <Sidebar /> */}
-
+    <nav
+      className={`${
+        !scrolled ? "bg-transparent" : "bg-primary"
+      } sm:px-16 px-6 fixed top-0 z-20 flex w-full items-center py-5`}
+    >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <motion.span
           className="flex items-center gap-2"
@@ -138,7 +144,7 @@ function Navbar() {
           </div>
         </motion.div>
       </div>
-    </div>
+    </nav>
   );
 }
 

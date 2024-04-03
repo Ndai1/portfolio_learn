@@ -10,9 +10,12 @@ import Experience from "./components/experience/Experience";
 function App() {
   return (
     <div className="bg-primary relative z-0">
-      <section id="Homepage">
+      <div>
         <Navbar></Navbar>
-        {/* <Hero></Hero> */}
+        <Hero></Hero>
+      </div>
+      <section id="about">
+        <About />
       </section>
       {/* 
       <section id="about">
