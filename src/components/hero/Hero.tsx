@@ -41,8 +41,28 @@ const Hero = () => {
           <p className="font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] text-white-100 mt-2">
             I'm a Frontend & Backend developer
           </p>
-          <img src={hero} alt="hero" className="w-full h-full" />
         </div>
+      </div>
+
+      <div className="width: 100%; height: 100%; overflow: hidden; pointer-events: auto; touch-action: none;">
+        <div className="absolute bottom-0 flex flex-row items-center justify-center">
+          <img src={hero} alt="hero" width="40%" height="100%" />
+        </div>
+      </div>
+      <div className="absolute xs:bottom-24 lg:bottom-0  flex w-full justify-center items-center">
+        <a href="#about">
+          <div className="flex h-[64px] w-[35px] justify-center items-center border-4 border-[#915eff] rounded-2xl ">
+            <motion.div
+              className="h-[15px] w-[15px] bg-[#915eff] mb-1 rounded-full"
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 1.5,
+              }}
+              animate={{ y: [0, 20, 0] }}
+            ></motion.div>
+          </div>
+        </a>
       </div>
     </div>
   );
